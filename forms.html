@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #fdf6e3;
+            color: #5b4636;
+            padding: 30px;
+        }
+
+        .form-container {
+            width: 450px;
+            padding: 20px;
+            background-color: #f5e8c7;
+            border: 2px solid #c2b280;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            background-color: #fff8dc;
+            border: 1px solid #c2b280;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form-inline {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #a67c52;
+            color: #fff8dc;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8b5e3c;
+        }
+    </style>
+<h2>Form Example</h2>
+
+<form action="/submit" method="post">
+    TEXT: <input type="text" name="username" autocomplete="on"><br><br>
+
+    GENDER: <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    CHECKBOX:
+    <input type="checkbox" name="hobby" value="reading"> CARS
+    <input type="checkbox" name="hobby" value="sports"> Sports<br><br>
+
+    DROPDOWN MENU:
+    <select name="car">
+        <option value="volvo">AUDI</option>
+        <option value="saab" selected>BMW</option>
+        <option value="fiat">LAMBORGHINI</option>
+    </select><br><br>
+
+    Multiple Select (Size + Multiple):
+    <select name="fruits" size="4" multiple>
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="mango">Mango</option>
+    </select><br><br>
+
+    TEXTAREA:<br>
+    <textarea name="comments" rows="4" cols="40"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
