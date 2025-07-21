@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kashmir Tourism</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #141414;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #e50914;
+    }
+
+    nav .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e50914;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      color: #fff;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+      color: #e50914;
+    }
+
+    .hero {
+      background-image: url("https://source.unsplash.com/1600x500/?kashmir,mountains");
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 42px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 8px #000;
+      border-bottom: 2px solid #e50914;
+    }
+
+    section {
+      background-color: #181818;
+      margin: 30px auto;
+      padding: 30px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(229, 9, 20, 0.2);
+      max-width: 900px;
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #e50914;
+      font-size: 28px;
+    }
+
+    section img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      border: 2px solid #e50914;
+    }
+
+    section p {
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: right;
+      }
+
+      .hero {
+        font-size: 28px;
+        padding: 0 15px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Kashmir Tourism</div>
+    <ul>
+      <li>Home</li>
+      <li>Destinations</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    Explore the Beauty of Kashmir
+  </div>
+
+  <!-- Tourist Places -->
+  <section>
+    <h2>Dal Lake</h2>
+    <img src="dl.jpg" alt="Dal Lake">
+    <p>Dal Lake is the jewel of Srinagar, known for its beautiful houseboats and shikara rides. The reflection of the surrounding mountains in the calm waters is breathtaking.</p>
+  </section>
+
+  <section>
+    <h2>Pahalgam</h2>
+    <img src="pg.jpg" alt="Pahalgam">
+    <p>Pahalgam is a lush green valley surrounded by snow-capped peaks. It is a perfect spot for trekking, camping, and enjoying nature's serenity.</p>
+  </section>
+
+  <section>
+    <h2>Shurunz Waterfall</h2>
+    <img src="sw.webp" alt="Shurunz Waterfall">
+    <p>Shurunz Waterfall is a hidden gem tucked away in the valleys of Kashmir. The peaceful environment and sound of the cascading water make it a must-visit.</p>
+  </section>
+
+  <section>
+    <h2>Daksum</h2>
+    <img src="ds.webp" alt="Daksum">
+    <p>Daksum is a beautiful forested area ideal for nature lovers. It offers cool breeze, thick pine forests, and flowing streams perfect for relaxation.</p>
+  </section>
+
+  <section>
+    <h2>Gulmarg</h2>
+    <img src="gm.webp" alt="Gulmarg">
+    <p>Gulmarg is a popular ski resort and home to one of the highest cable cars in the world. In winter, it's a snowy paradise, and in summer, a flowery meadow.</p>
+  </section>
+
+  <section>
+    <h2>Sonmarg</h2>
+    <img src="sm.webp" alt="Sonmarg">
+    <p>Sonmarg, meaning 'Meadow of Gold', offers stunning views of glaciers and snow-covered mountains. It is a starting point for many trekking routes.</p>
+  </section>
+
+</body>
+</html>

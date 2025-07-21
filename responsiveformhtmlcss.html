@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Contact Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #271a1a;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      background: #7b1d1d;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(104, 74, 74, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 20px;
+      border: 1px solid #ffe3e3;
+      border-radius: 6px;
+      resize: vertical;
+      font-size: 16px;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3498db;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      input, textarea, button {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="ANDLEEB" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="ANDLEEB@gmail.com" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Antenna" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="LIVE AND LET LIVE" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
